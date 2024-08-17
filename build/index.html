@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imran's Portfolio</title>
+    <link rel="shortcut icon" href="./images/person.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="min-h-full bg-slate-50 dark:bg-slate-950 dark:text-white">
+    <header
+      class="z-50 bg-teal-700 text-white sticky top-0 left-0 w-full rounded-bl-2xl rounded-br-2xl dark:bg-teal-500"
+    >
+      <section class="max-w-3xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-2xl md:text-3xl font-medium font-nunito relative">
+          <a href="#home">Imran khan</a>
+          <img
+            src="./images/sprinkler2.png"
+            alt="sprinklerpng"
+            class="w-16 h-10 absolute -z-1 top-0"
+          />
+        </h1>
+        <button class="text-2xl md:text-3xl sm:hidden">&#9776;</button>
+        <nav class="hidden sm:flex sm:justify-center sm:items-center">
+          <ul class="flex justify-center items-center space-x-8 min-w-[400px]">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-gray-200 font-nunito text-[18px]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="hover:text-gray-200 font-nunito text-[18px]"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="hover:text-gray-200 font-nunito text-[18px]"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-gray-200 font-nunito text-[18px]"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="max-w-3xl mx-auto p-2">
+      <section
+        id="hero"
+        class="flex flex-col-reverse sm:flex-row justify-center p-6 items-center gap-8 mb-12"
+      >
+        <article class="text-center md:text-left sm:w-1/2">
+          <h1
+            class="text-2xl font-medium font-nunito dark:text-white text-slate-950 sm:text-left sm:text-4xl"
+          >
+            I'm Imran Khan. I'm a
+            <span class="font-bold text-nowrap dark:text-teal-500">
+              Data Analyst
+            </span>
+          </h1>
+          <p class="text-[18px] mt-4">
+            I’m a detail-oriented
+            <span class="rounded-xl bg-teal-500 text-white px-1"
+              >data analyst</span
+            >
+            specializing in transforming numbers into actionable insights using
+            <span class="rounded-xl bg-teal-500 text-white px-1">Power BI</span>
+            for interactive dashboards. I also excel in
+            <span class="rounded-xl bg-teal-500 text-nowrap text-white px-1"
+              >web scraping </span
+            >with
+            <span class="rounded-xl bg-teal-500 text-white px-1">Python</span>
+            and
+            <span class="rounded-xl bg-teal-500 text-white text-nowrap px-1"
+              >Beautiful Soup</span
+            >
+            to extract valuable data from websites.
+          </p>
+
+          <p class="text-[14px] text-gray-400 mt-4">
+            "Turning Data into Decisions: Insightful Dashboards & Actionable
+            Intelligence"
+          </p>
+        </article>
+        <div
+          class="-z-20 rounded-full bg-teal-600 dark:bg-teal-400 backdrop-blur-3xl max-w-1/2 relative"
+        >
+          <img src="./images/person.png" width="500" alt="" class="mx-auto
+          lg:w-[500px] w-[300px]"/ >
+          <!-- <img
+            src="./images/sprinklers.png"
+            alt=""
+            class="w-[400px] -z-10 h-[300px] absolute -z-1 top-0"
+          /> -->
+          <!-- <img src="./images/skillSectionImages/powerbi.jpeg "w-20 z-10
+           rotate-[-20deg] absolute top-10 left-14" alt="" /> -->
+          <img
+            src="./images/skillSectionImages/excel.png"
+            class="top-16 left-6 w-8 md:w-16 rotate-[30deg] absolute md:top-20 md:right-14"
+            alt=""
+          />
+          <img
+            src="./images/skillSectionImages/python.png"
+            class="top-16 right-6 w-8 md:w-10 absolute md:top-48 md:left-6"
+            alt=""
+          />
+          <img
+            src="./images/skillSectionImages/graphs.png"
+            class="bottom-10 left-2 w-8 md:w-10 rotate-[0deg] absolute md:bottom-20 md:right-7"
+            alt=""
+          />
+          <img
+            src="./images/skillSectionImages/selenium.png"
+            class="bottom-14 right-4 w-8 md:w-10 rotate-[0deg] absolute md:top-36 md:right-7"
+            alt=""
+          />
+          <img
+            src="./images/skillSectionImages/sql.png"
+            class="bottom-24 left-3 w-8 md:w-10 rotate-[0deg] absolute md:top-16 md:left-16"
+            alt=""
+          />
+          <img
+            src="./images/skillSectionImages/beautiful-soup.png"
+            class="w-8 md:w-16 bottom-28 right-4 rotate-[0deg] absolute md:top-32 md:left-6"
+            alt=""
+          />
+        </div>
+      </section>
+      <hr
+        class="dark:bg-gray-500 w-[70%] bg-teal-800 h-1 rounded-full mx-auto mb-5"
+      />
+      <section id="#skills" class="">
+        <h1 class="text-2xl font-medium font-nunito text-center">
+          Skill/Expertise
+        </h1>
+        <ul
+          class="flex p-4 my-14 rounded-lg items-center justify-center flex-wrap gap-6"
+        >
+          <!-- Repeat the same structure for other <li> items -->
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:</span>Python</p>
+                </li>
+                <li>
+                  <p><span>expertise:</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>80%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data cleaning | data
+                  science
+                </li>
+              </ul>
+            </div>
+            <img
+              src="./images/skillSectionImages/python.png"
+              class="w-1/2 mx-auto mt-5"
+              alt=""
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- <div class="w-14 p-20">
+      <canvas class="w-1/2" id="myChart" width="100px" height="100px"></canvas>
+    </div> -->
+  </body>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    const ctx = document.getElementById("myChart");
+
+    ctx.addEventListener("mouseover", () => {
+      var ctx = document.getElementById("myChart").getContext("2d");
+
+      var myChart = new Chart(ctx, {
+        type: "bar", // Chart type
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"], // Labels for each bar
+          datasets: [
+            {
+              label: "Skill Level",
+              data: [0.12, 0.19, 0.03, 0.05, 0.02, 1], // Data values as percentages (e.g., 12% is 0.12)
+              borderWidth: 1,
+              backgroundColor: [
+                "#FF5733", // Color for the first bar
+                "#33FF57", // Color for the second bar
+                "#3357FF", // Color for the third bar
+                "#F3FF33", // Color for the fourth bar
+                "#FF33A1", // Color for the fifth bar
+                "#33FFF6", // Color for the sixth bar
+              ],
+              width: "100px",
+              borderColor: [
+                "#C70039", // Border color for the first bar
+                "#28B463", // Border color for the second bar
+                "#2E86C1", // Border color for the third bar
+                "#F7DC6F", // Border color for the fourth bar
+                "#F39C12", // Border color for the fifth bar
+                "#1ABC9C", // Border color for the sixth bar
+              ],
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true, // Start the y-axis at zero
+              ticks: {
+                // Formatter function for y-axis labels
+                callback: function (value) {
+                  return value * 100 + "%"; // Convert to percentage format
+                },
+              },
+            },
+          },
+        },
+      });
+    });
+  </script> -->
+</html>
