@@ -1,28 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" scroll-smooth scroll-pt-20  ">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imran's Portfolio</title>
     <link rel="shortcut icon" href="./images/person.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
+    <head>
+      <!-- Other head elements -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMqCwft0HeB3uD3DEjk82Mk7mC5sGgZxQ7y8Lw" crossorigin="anonymous">
+    </head>
+    
   </head>
-  <body class="min-h-full bg-slate-50 dark:bg-slate-950 dark:text-white">
-    <header
+  <body class="min-h-full  bg-slate-50 dark:bg-slate-950 dark:text-white">
+      <!-- <header
+        class="z-10 bg-teal-700 text-white sticky top-0 left-0 w-full rounded-bl-2xl rounded-br-2xl dark:bg-teal-500"
+      >
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+          <h1 class="text-2xl md:text-3xl font-medium font-nunito relative">
+            <a href="#home">Imran khan</a>
+           
+          </h1>
+          <button class="text-2xl md:text-3xl sm:hidden">&#9776;</button>
+          <nav class="hidden sm:flex sm:justify-center sm:items-center">
+            <ul class="flex justify-center items-center space-x-8 min-w-[400px]">
+              <li>
+                <a
+                  href="#home"
+                  class="hover:text-gray-200 font-nunito text-[18px]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#aboutme"
+                  class="hover:text-gray-200 font-nunito text-[18px]"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="hover:text-gray-200 font-nunito text-[18px]"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-gray-200 font-nunito text-[18px]"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header> -->
+      
+      <header
       class="z-50 bg-teal-700 text-white sticky top-0 left-0 w-full rounded-bl-2xl rounded-br-2xl dark:bg-teal-500"
     >
-      <section class="max-w-3xl mx-auto p-4 flex justify-between items-center">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
         <h1 class="text-2xl md:text-3xl font-medium font-nunito relative">
-          <a href="#home">Imran khan</a>
-          <img
-            src="./images/sprinkler2.png"
-            alt="sprinklerpng"
-            class="w-16 h-10 absolute -z-1 top-0"
-          />
+          <a href="#home">Imran Khan</a>
         </h1>
-        <button class="text-2xl md:text-3xl sm:hidden">&#9776;</button>
-        <nav class="hidden sm:flex sm:justify-center sm:items-center">
-          <ul class="flex justify-center items-center space-x-8 min-w-[400px]">
+        <div class="">
+         
+        </div>
+        <button id="menu-toggle" class="text-2xl md:text-3xl sm:hidden">  
+          &#9776;
+        </button>
+        <nav
+          id="menu"
+          class="hidden sm:flex sm:justify-center sm:items-center fixed top-0 left-0 w-full h-full bg-teal-500 bg-opacity-90 sm:bg-opacity-100 sm:bg-transparent sm:static sm:w-auto sm:h-auto"
+        >
+        
+          <ul
+            class="flex mt-40 sm:mt-0 text-xl flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-8 min-w-[400px] p-8 sm:p-0"
+          > 
+          
             <li>
               <a
                 href="#home"
@@ -32,7 +88,7 @@
             </li>
             <li>
               <a
-                href="#about"
+                href="#aboutme"
                 class="hover:text-gray-200 font-nunito text-[18px]"
                 >About Me</a
               >
@@ -46,120 +102,233 @@
             </li>
             <li>
               <a
-                href="#contact"
+                href="#skills"
+                class="hover:text-gray-200 font-nunito text-[18px]"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contactme"
                 class="hover:text-gray-200 font-nunito text-[18px]"
                 >Contact Me</a
               >
             </li>
+           
           </ul>
         </nav>
       </section>
     </header>
-    <main class="max-w-3xl mx-auto p-2">
-      <section
-        id="hero"
-        class="flex flex-col-reverse sm:flex-row justify-center p-6 items-center gap-8 mb-12"
-      >
-        <article class="text-center md:text-left sm:w-1/2">
-          <h1
-            class="text-2xl font-medium font-nunito dark:text-white text-slate-950 sm:text-left sm:text-4xl"
-          >
-            I'm Imran Khan. I'm a
-            <span class="font-bold text-nowrap dark:text-teal-500">
-              Data Analyst
-            </span>
-          </h1>
-          <p class="text-[18px] mt-4">
-            I’m a detail-oriented
-            <span class="rounded-xl bg-teal-500 text-white px-1"
-              >data analyst</span
-            >
-            specializing in transforming numbers into actionable insights using
-            <span class="rounded-xl bg-teal-500 text-white px-1">Power BI</span>
-            for interactive dashboards. I also excel in
-            <span class="rounded-xl bg-teal-500 text-nowrap text-white px-1"
-              >web scraping </span
-            >with
-            <span class="rounded-xl bg-teal-500 text-white px-1">Python</span>
-            and
-            <span class="rounded-xl bg-teal-500 text-white text-nowrap px-1"
-              >Beautiful Soup</span
-            >
-            to extract valuable data from websites.
-          </p>
+      <div class="dark:bg-teal-400 bg-teal-600  fixed top-20 right-0 p-2 rounded-tl-2xl rounded-bl-2xl">
 
-          <p class="text-[14px] text-gray-400 mt-4">
-            "Turning Data into Decisions: Insightful Dashboards & Actionable
-            Intelligence"
-          </p>
-        </article>
-        <div
-          class="-z-20 rounded-full bg-teal-600 dark:bg-teal-400 backdrop-blur-3xl max-w-1/2 relative"
+        <button id="darkModeToggle" class="p-2 text-3xl text-white rounded">
+          <p class="dark:hidden">🌑</p>
+          <p class="hidden dark:block">🔆</p>
+        </button>
+      </div>
+      <main class="max-w-4xl mx-auto p-2 ">
+        <section
+          id="home"
+          class=" md:min-h-[100vh] flex flex-col-reverse sm:flex-row justify-center p-6 items-center gap-8 mb-12"
         >
-          <img src="./images/person.png" width="500" alt="" class="mx-auto
-          lg:w-[500px] w-[300px]"/ >
-          <!-- <img
-            src="./images/sprinklers.png"
-            alt=""
-            class="w-[400px] -z-10 h-[300px] absolute -z-1 top-0"
-          /> -->
-          <!-- <img src="./images/skillSectionImages/powerbi.jpeg "w-20 z-10
-           rotate-[-20deg] absolute top-10 left-14" alt="" /> -->
-          <img
-            src="./images/skillSectionImages/excel.png"
-            class="top-16 left-6 w-8 md:w-16 rotate-[30deg] absolute md:top-20 md:right-14"
-            alt=""
-          />
-          <img
-            src="./images/skillSectionImages/python.png"
-            class="top-16 right-6 w-8 md:w-10 absolute md:top-48 md:left-6"
-            alt=""
-          />
-          <img
-            src="./images/skillSectionImages/graphs.png"
-            class="bottom-10 left-2 w-8 md:w-10 rotate-[0deg] absolute md:bottom-20 md:right-7"
-            alt=""
-          />
-          <img
-            src="./images/skillSectionImages/selenium.png"
-            class="bottom-14 right-4 w-8 md:w-10 rotate-[0deg] absolute md:top-36 md:right-7"
-            alt=""
-          />
-          <img
-            src="./images/skillSectionImages/sql.png"
-            class="bottom-24 left-3 w-8 md:w-10 rotate-[0deg] absolute md:top-16 md:left-16"
-            alt=""
-          />
-          <img
-            src="./images/skillSectionImages/beautiful-soup.png"
-            class="w-8 md:w-16 bottom-28 right-4 rotate-[0deg] absolute md:top-32 md:left-6"
-            alt=""
-          />
-        </div>
+          <article class="text-center md:text-left sm:w-1/2">
+            <p class="text-center">Hello! I'm</p>
+            <h1
+              class="text-2xl text-center md:text-center font-medium font-nunito dark:text-white text-slate-950 sm:text-left sm:text-4xl"
+            >
+              Imran khan, 
+              <span
+                class="font-bold text-center text-nowrap text-teal-600 dark:text-teal-400"
+              >
+                I'm a Data Analyst
+              </span>
+            </h1>
+            <section id="contactinfo" class=" hidden fixed w-full top-0 bottom-0 z-[40]  left-0 right-0">
+              <div class="md:w-[60%] relative w-full ml-auto mr-auto bg-teal-500 mt-20 mb-20 shadow-2xl  text-black rounded-2xl pl-20 pr-20 pt-10 pb-10 ">
+                <button class="absolute top-4 right-4 text-3xl text-white" id="close"><img loading="lazy" class=" hover:w-9 w-8" src="./images/icons/cross.png" alt=""></button>
+                <ul class="flex flex-col justify-center  gap-4">
+                  <li class="border flex flex-row bg-teal-300 p-4 rounded-full"> <img loading="lazy" src="./images/icons/email.png"   class=" inline w-8" alt="Email"><a  class="min-w-[300px]   p-1 rounded-lg ml-4 flex-grow bg-teal-200"  href="mailto:ik1703656@gmail.com
+                    ">ik1703656@gmail.com
+                  </a></li>
+                  <li class="border  overflow-hidden  flex flex-row bg-teal-300 p-4 rounded-full"> <img loading="lazy" src="./images/icons/phone.png"   class=" inline w-8" alt="Phone"><a  class="md:min-w-[300px] flex-grow    w-[full] overflow-y-auto   p-1 rounded-lg ml-4 bg-teal-200"  href="tel:+923148147665">+92 314 8147665</a></li>
+                  <li class="border  overflow-hidden  flex flex-row bg-teal-300 p-4 rounded-full"> <img loading="lazy" src="./images/icons/fb.png"   class=" inline w-8" alt="Facebook"><a  class="md:min-w-[300px] flex-grow     w-[full] overflow-y-auto  p-1 rounded-lg ml-4 bg-teal-200" href="https://www.facebook.com/profile.php?id=61557946934104 ">https://www.facebook.com/Imran khan</a></li>
+                  <li class="border  overflow-hidden  flex flex-row bg-teal-300 p-4 rounded-full"> <img loading="lazy" src="./images/icons/twitter.png"   class=" inline w-8" alt="Twitter"><a  class="md:min-w-[300px] flex-grow   w-[full] overflow-y-auto     p-1 rounded-lg ml-4 bg-teal-200"  href=" https://www.twitter.com "> https://www.twitter.com/imran_analyst/ </a></li>
+                  <li class="border  overflow-hidden  flex flex-row bg-teal-300 p-4 rounded-full"> <img loading="lazy" src="./images/icons/insta.png"   class=" inline w-8" alt="InstaGram"><a  class="md:min-w-[300px] flex-grow    w-[full] overflow-y-auto   p-1 rounded-lg ml-4 bg-teal-200"  href=" https://www.instagram.com/imran_analyst/ ">  https://www.instagram.com/ imran_analyst</a></li>
+                  <li class="border  overflow-hidden  flex flex-row bg-teal-300 p-4 rounded-full"> <img loading="lazy" src="./images/icons/linkdin.png"   class=" inline w-8" alt="Linkdin"><a  class="md:min-w-[300px] flex-grow    w-[full] overflow-y-auto   p-1 rounded-lg ml-4 bg-teal-200"  href="https://www.linkedin.com/in/imran-khan-8585i/
+                    "> https://www.linkedin.com/in/imran-khan</a></li>
+                </ul>
+              </div>
+
+            </section>
+
+            <div>
+              <div class="flex justify-center mt-6">
+                <a download href="./images/person.png"
+                  
+                  class=" hover:bg-red-700 dark:border-white hover:text-white transition-all dark:border border-2 border-black p-3 mr-4 rounded-full min-w-28"
+                >
+                  Download Cv
+                </a>
+                <button
+                  class="border text-white dark:bg-teal-400 bg-teal-500 p-3 rounded-full min-w-28"
+                  id="contact"
+                >
+                  Contact info
+                </button>
+              </div>
+              <div
+                class="flex justify-center gap-4 m-4 dark:bg-teal-400 bg-teal-500 p-4 w-40 rounded-full mr-auto ml-auto"
+              >
+                <a href="https://www.facebook.com/profile.php?id=61557946934104" >
+                  
+                  <img loading="lazy" class="w-6 h-6" src="./images/icons/fb.png" alt="" />
+                </a>
+                <a href="https://www.instagram.com/imran_analyst/">
+
+                  <img loading="lazy" class="w-6 h-6" src="./images/icons/insta.png" alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/imran-khan-8585i/">
+                 
+                  <img loading="lazy" class="w-6 h-6" src="./images/icons/linkdin.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <div
+            class="-z-20  rounded-full bg-teal-500 dark:bg-teal-400 backdrop-blur-3xl max-w-1/2 relative"
+          >
+           <img src="./images/personal/imran.png" alt="" class="w-300">
+          </div>
+        </section>
+        <hr
+          class="dark:bg-gray-500 w-[70%] bg-teal-800 h-1 rounded-full mx-auto mb-5"
+        />
+        <section id="aboutme" class="mt-16 font-nunito ">
+          <header class="text-center mb-2 md:mb-16">
+            <div class="max-w-3xl mx-auto text-center">
+              <p class="dark:text-gray-400 text-gray-600 mb-2 "> All you need to know  </p>
+              <h2 class="text-3xl font-extrabold dark:text-white text-gray-900 mb-4">About Me</h2>
+            </div>
+          </header>
+          <main class="flex items-center gap-10 ">
+            <img loading="lazy"
+            src="./images/personal/imran2.png"
+              class="hidden md:block shadow-md bg-teal-500 shadow-teal-200  border-teal-400 border-4 rounded-md h-[300px] w-[300px] object-cover"
+              alt=""
+            />
+            <div class="flex-grow">
+              <div class="flex gap-6 flex-wrap md:flex-col-reverse">
+                <div class="skills m-2 md:m-2 text-center shadow-md shadow-teal-200 bg-teal-500 p-4 rounded-2xl">
+                  <p class="text-[18px] mt-4 ">
+                    I’m a detail-oriented
+                    <span class="rounded-xl bg-white text-black px-1"
+                      >data analyst</span
+                    >
+                    specializing in transforming numbers into actionable insights
+                    using
+                    <span class="rounded-xl bg-white text-nowrap text-black px-1"
+                      >Power BI</span
+                    >
+                    for interactive dashboards. I also excel in
+                    <span
+                      class="rounded-xl bg-white text-nowrap text-black px-1"
+                      >web scraping </span
+                    >with
+                    <span class="rounded-xl bg-white text-black px-1"
+                      >Python</span
+                    >
+                    and
+                    <span
+                      class="rounded-xl bg-white text-black text-nowrap px-1"
+                      >Beautiful Soup</span
+                    >
+                    to extract valuable data from websites.
+                  </p>
+                </div>
+              <div class="md:flex md:gap-10  w-full">
+                <div
+                  class="experience  min-h-[200px] bg-teal-500 p-4 md:w-1/2 shadow-md shadow-teal-200 w-full flex-grow md:flex-grow-0 md:max-w-[50%] max-w-[90%] m-auto rounded-lg mb-10 md:mb-0 light:border-gray-500"
+                >
+                  <h1 class="text-center mb-3 font-mono font-bold underline">Experience</h1>
+                  <p>
+                 <p class="text-center"> <span>👨‍💻</span>5 months onsite internship at <a  class="text-white underline" href=""> Jafasa tech </a>
+
+
+                 </p>
+                 <p class="text-center"> <span>💻</span>2 month virtual internship @ <a  class="text-white underline"  href="https://www.linkedin.com/company/cognoriseinfotech/posts/?feedView=all"> Cognorise  infotech</a>
+                  </p>
+                </div>
+                <div
+                  class="education p-4 md:w-1/2  min-h-[200px] space-y-5 bg-teal-500 shadow-teal-300 shadow-md w-full flex-grow md:flex-grow-0 md:max-w-[50%] max-w-[90%] m-auto rounded-lg"
+                >
+                  <h1 class="text-center mb-3 font-mono font-bold underline">Education</h1>
+                  <p>
+                    <p class="  text-center"><span>🧑‍🎓</span> F.Cs (Intermediate in computer science) </p>
+                    <p class="text-center"><span>🎓</span> D.I.T (Diploma of IT) </p>
+                   
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </section>
-      <hr
+     
+      <section id="skills" class="mt-16 md:mt-40 ">
+        <hr
         class="dark:bg-gray-500 w-[70%] bg-teal-800 h-1 rounded-full mx-auto mb-5"
       />
-      <section id="#skills" class="">
-        <h1 class="text-2xl font-medium font-nunito text-center">
-          Skill/Expertise
-        </h1>
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold dark:text-white text-gray-900 mb-4">Skills/Tools</h2>
+        <p class="dark:text-white text-gray-600 mb-8"> I Excel in these skills </p>
+      </div>
         <ul
           class="flex p-4 my-14 rounded-lg items-center justify-center flex-wrap gap-6"
         >
           <!-- Repeat the same structure for other <li> items -->
           <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <span>90%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> data wrangling | data cleaning 
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy"
+              src="./images/skillSectionImages/excel.png"
+              class="w-1/2 mx-auto mt-14"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
           >
             <div
               class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
             >
               <ul class="list-none text-center text-[15px] flex-col">
                 <li>
-                  <p><span>skill:</span>Python</p>
+                  <p><span>skill: &nbsp;</span>Python</p>
                 </li>
                 <li>
-                  <p><span>expertise:</span>Intermediate</p>
+                  <p><span>expertise: &nbsp;</span>Intermediate</p>
                 </li>
                 <li class="my-2">
                   <span></span>
@@ -174,29 +343,28 @@
                   <span>80%</span>
                 </li>
                 <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
+                  <span>description:</span> Script writing | logic programming
                 </li>
               </ul>
             </div>
-            <img
+            <img loading="lazy"
               src="./images/skillSectionImages/python.png"
               class="w-1/2 mx-auto mt-5"
               alt=""
             />
           </li>
           <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
           >
             <div
               class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
             >
               <ul class="list-none text-center text-[15px] flex-col">
                 <li>
-                  <p><span>skill:</span>Python</p>
+                  <p><span>skill:&nbsp;</span>Graphs knowledge  </p>
                 </li>
                 <li>
-                  <p><span>expertise:</span>Intermediate</p>
+                  <p><span>expertise: &nbsp;</span>Intermediate</p>
                 </li>
                 <li class="my-2">
                   <span></span>
@@ -205,35 +373,34 @@
                   >
                     <div
                       class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
+                      style="width: 70%"
                     ></div>
                   </div>
-                  <span>80%</span>
+                  <span>70%</span>
                 </li>
                 <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
+                  <span>description:</span> Graph plotting | Graph analysis 
                 </li>
               </ul>
             </div>
-            <img
-              src="./images/skillSectionImages/python.png"
+            <img loading="lazy"
+              src="./images/skillSectionImages/graphs.png"
               class="w-1/2 mx-auto mt-5"
               alt=""
             />
           </li>
           <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
           >
             <div
               class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
             >
               <ul class="list-none text-center text-[15px] flex-col">
                 <li>
-                  <p><span>skill:</span>Python</p>
+                  <p><span>skill:&nbsp;</span> Power BI</p>
                 </li>
                 <li>
-                  <p><span>expertise:</span>Intermediate</p>
+                  <p><span>expertise: &nbsp;</span>Intermediate</p>
                 </li>
                 <li class="my-2">
                   <span></span>
@@ -242,32 +409,30 @@
                   >
                     <div
                       class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
+                      style="width: 87%"
                     ></div>
                   </div>
-                  <span>80%</span>
+                  <span>86%</span>
                 </li>
                 <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
-                </li>
+                  <span>description:</span>Data Visualization | Presentation | insights                </li>
               </ul>
             </div>
-            <img
-              src="./images/skillSectionImages/python.png"
+            <img loading="lazy"
+              src="./images/skillSectionImages/powerbi.png"
               class="w-1/2 mx-auto mt-5"
               alt=""
             />
           </li>
           <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
           >
             <div
               class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
             >
               <ul class="list-none text-center text-[15px] flex-col">
                 <li>
-                  <p><span>skill:</span>Python</p>
+                  <p><span>skill:&nbsp;</span> SQL</p>
                 </li>
                 <li>
                   <p><span>expertise:</span>Intermediate</p>
@@ -279,35 +444,70 @@
                   >
                     <div
                       class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
-                    ></div>
+                      style="width: 90%"
+                    ></div> 
                   </div>
-                  <span>80%</span>
+                  <span>90%</span>
                 </li>
                 <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
+                  <span>description:</span> SQL queries | Database management 
                 </li>
               </ul>
             </div>
-            <img
-              src="./images/skillSectionImages/python.png"
+            <img loading="lazy"
+              src="./images/skillSectionImages/sql.png"
+              class="w-1/2 mx-auto mt-14"
+              alt=""
+            />
+          </li>
+          <li
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li>
+                  <p><span>skill:&nbsp;</span> Selenium</p>
+                </li>
+                <li>
+                  <p><span>expertise:&nbsp;</span>Intermediate</p>
+                </li>
+                <li class="my-2">
+                  <span></span>
+                  <div
+                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
+                  >
+                    <div
+                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                  <span>70%</span>
+                </li>
+                <li class="text-nowrap text-[10px]">
+                  <span>description:</span> web scraping | data collection
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy"
+              src="./images/skillSectionImages/selinium.png"
               class="w-1/2 mx-auto mt-5"
               alt=""
             />
           </li>
           <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
           >
             <div
               class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
             >
               <ul class="list-none text-center text-[15px] flex-col">
                 <li>
-                  <p><span>skill:</span>Python</p>
+                  <p><span>skill:&nbsp;</span>Tableau</p>
                 </li>
                 <li>
-                  <p><span>expertise:</span>Intermediate</p>
+                  <p><span>expertise:</span>Beginner</p>
                 </li>
                 <li class="my-2">
                   <span></span>
@@ -316,32 +516,32 @@
                   >
                     <div
                       class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
+                      style="width: 50%"
                     ></div>
                   </div>
-                  <span>80%</span>
+                  <span>50%</span>
                 </li>
                 <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
+                  <span>description:</span>  embedding plots into applications 
+                  
                 </li>
               </ul>
             </div>
-            <img
-              src="./images/skillSectionImages/python.png"
-              class="w-1/2 mx-auto mt-5"
+            <img loading="lazy"
+              src="./images/skillSectionImages/tableau.png"
+              class="w-1/2 mx-auto mt-8"
               alt=""
             />
           </li>
           <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
           >
             <div
               class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
             >
               <ul class="list-none text-center text-[15px] flex-col">
                 <li>
-                  <p><span>skill:</span>Python</p>
+                  <p><span>skill:&nbsp;</span>Statistics</p>
                 </li>
                 <li>
                   <p><span>expertise:</span>Intermediate</p>
@@ -353,35 +553,34 @@
                   >
                     <div
                       class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
+                      style="width: 70%"
                     ></div>
                   </div>
-                  <span>80%</span>
+                  <span>70%</span>
                 </li>
                 <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
+                  <span>description:&nbsp;</span>  Statistics | Hypothesis Testing
                 </li>
               </ul>
             </div>
-            <img
-              src="./images/skillSectionImages/python.png"
-              class="w-1/2 mx-auto mt-5"
+            <img loading="lazy"
+              src="./images/skillSectionImages/stats.png"
+              class="w-[60%] mx-10 "
               alt=""
             />
           </li>
           <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
           >
             <div
               class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
             >
               <ul class="list-none text-center text-[15px] flex-col">
                 <li>
-                  <p><span>skill:</span>Python</p>
+                  <p><span>skill:&nbsp;</span>MatplotLib</p>
                 </li>
                 <li>
-                  <p><span>expertise:</span>Intermediate</p>
+                  <p><span>expertise:&nbsp;</span>Beginner</p>
                 </li>
                 <li class="my-2">
                   <span></span>
@@ -390,156 +589,358 @@
                   >
                     <div
                       class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
+                      style="width: 40%"
                     ></div>
                   </div>
-                  <span>80%</span>
+                  <span>40%</span>
                 </li>
                 <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
+                  <span>description:</span> Data visualization | Data exploration
                 </li>
               </ul>
             </div>
-            <img
-              src="./images/skillSectionImages/python.png"
-              class="w-1/2 mx-auto mt-5"
-              alt=""
-            />
-          </li>
-          <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
-          >
-            <div
-              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
-            >
-              <ul class="list-none text-center text-[15px] flex-col">
-                <li>
-                  <p><span>skill:</span>Python</p>
-                </li>
-                <li>
-                  <p><span>expertise:</span>Intermediate</p>
-                </li>
-                <li class="my-2">
-                  <span></span>
-                  <div
-                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
-                  >
-                    <div
-                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
-                    ></div>
-                  </div>
-                  <span>80%</span>
-                </li>
-                <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
-                </li>
-              </ul>
-            </div>
-            <img
-              src="./images/skillSectionImages/python.png"
-              class="w-1/2 mx-auto mt-5"
-              alt=""
-            />
-          </li>
-          <li
-            class="relative max-w-[350px] sm:max-w-[250px] bg-teal-600 dark:bg-transparent hover:bg-teal-400 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
-          >
-            <div
-              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#000000d5]"
-            >
-              <ul class="list-none text-center text-[15px] flex-col">
-                <li>
-                  <p><span>skill:</span>Python</p>
-                </li>
-                <li>
-                  <p><span>expertise:</span>Intermediate</p>
-                </li>
-                <li class="my-2">
-                  <span></span>
-                  <div
-                    class="max-w-[50%] rounded-full bg-gray-500 h-[6px] relative mx-auto"
-                  >
-                    <div
-                      class="absolute rounded-full top-0 left-0 h-full bg-teal-400"
-                      style="width: 80%"
-                    ></div>
-                  </div>
-                  <span>80%</span>
-                </li>
-                <li class="text-nowrap text-[10px]">
-                  <span>description:</span> web scraping | data cleaning | data
-                  science
-                </li>
-              </ul>
-            </div>
-            <img
-              src="./images/skillSectionImages/python.png"
-              class="w-1/2 mx-auto mt-5"
+            <img loading="lazy"
+            loading="lazy"
+              src="./images/skillSectionImages/matplotlib.png"
+              class="w-[45%] mx-auto mt-5"
               alt=""
             />
           </li>
         </ul>
       </section>
+
+      <section id="projects" class="mt-16 md:mt-40 ">
+        <hr
+        class="dark:bg-gray-500 w-[70%] bg-teal-800 h-1 rounded-full mx-auto mb-5"
+      />
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold dark:text-white text-gray-900 mb-4">Projects</h2>
+        <p class="dark:text-white text-gray-600 mb-8"> These are some of my projects </p>
+      </div>
+        <ul
+          class="flex p-4 my-14 rounded-lg items-center justify-center flex-wrap gap-6"
+        >
+          <!-- Repeat the same structure for other <li> items -->
+         
+            <li
+            class="relative max-w-[350px] sm:max-w-[47%] md:h-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#174a44a8]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li class="border-2 bg-teal-500 rounded-full px-2 my-2">
+                  <span></span>
+                  <h2><span>name: &nbsp;</span>Crime Analysis</h2>
+                </li>
+                <li class="text-white">
+                  <span>Description: &nbsp;</span>
+                  <h2 class="border-2 bg-teal-500 rounded-3xl px-4">
+                    Data wrangling and cleaning tasks for improved data quality and insights.
+                  </h2>
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy" src="./images/projects/project1.jpg" class="w-full h-full object-cover rounded-xl" />
+          </li>
+            <li
+            class="relative max-w-[350px] sm:max-w-[47%] md:h-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#174a44a8]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li class="border-2 bg-teal-500 rounded-full px-2 my-2">
+                  <span></span>
+                  <h2><span>name: &nbsp;</span>Customer Churn Analysis</h2>
+                </li>
+                <li class="text-white">
+                  <span>Description: &nbsp;</span>
+                  <h2 class="border-2 bg-teal-500 rounded-3xl px-4">
+                    "Comprehensive analysis of customer churn patterns, highlighting factors influencing contract type and customer retention."
+
+                  </h2>
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy" src="./images/projects/project2.jpg" class="w-full h-full object-cover rounded-xl" />
+          </li>
+          
+          <li
+            class="relative max-w-[350px] sm:max-w-[47%] md:h-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#174a44a8]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li class="border-2 bg-teal-500 rounded-full px-2 my-2">
+                  <span></span>
+                  <h2><span>name: &nbsp;</span>Atliq Mart</h2>
+                </li>
+                <li class="text-white">
+                  <span>Description: &nbsp;</span>
+                  <h2 class="border-2 bg-teal-500 rounded-3xl px-4">
+                    "Business analytics dashboard displaying revenue trends, sales distribution, and key performance indicators for Atliq Mart."
+                  </h2>
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy" src="./images/projects/project3.jpg" class="w-full h-full object-cover rounded-xl" />
+          </li>
+          
+          <li
+            class="relative max-w-[350px] sm:max-w-[47%] md:h-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#174a44a8]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li class="border-2 bg-teal-500 rounded-full px-2 my-2">
+                  <span></span>
+                  <h2><span>name: &nbsp;</span>Code X:
+
+                  </h2>
+                </li>
+                <li class="text-white">
+                  <span>Description: &nbsp;</span>
+                  <h2 class="border-2 bg-teal-500 rounded-3xl px-4">
+                    "In-depth marketing and sales analysis, showcasing brand reach, consumer preferences, and distribution by city."
+
+                  </h2>
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy" src="./images/projects/project4.jpg" class="w-full h-full object-cover rounded-xl" />
+          </li>
+          
+          <li
+            class="relative max-w-[350px] sm:max-w-[47%] md:h-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#174a44a8]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li class="border-2 bg-teal-500 rounded-full px-2 my-2">
+                  <span></span>
+                  <h2><span>name: &nbsp;</span>Project 5</h2>
+                </li>
+                <li class="text-white">
+                  <span>Description: &nbsp;</span>
+                  <h2 class="border-2 bg-teal-500 rounded-3xl px-4">
+                    Exploratory data analysis focusing on identifying patterns and trends.
+                  </h2>
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy" src="./images/projects/project5.jpg" class="w-full h-full object-cover rounded-xl" />
+          </li>
+          
+          <li
+            class="relative max-w-[350px] sm:max-w-[47%] md:h-[250px] bg-teal-400 dark:bg-transparent hover:bg-teal-600 transition-all h-48 sm:h-40 border-[1px] shadow-md shadow-teal-300 border-teal-300 rounded-xl"
+          >
+            <div
+              class="grid place-content-center p-6 absolute opacity-0 hover:opacity-100 text-white rounded-xl transition-all inset-6 hover:inset-0 hover:bg-[#174a44a8]"
+            >
+              <ul class="list-none text-center text-[15px] flex-col">
+                <li class="border-2 bg-teal-500 rounded-full px-2 my-2">
+                  <span></span>
+                  <h2><span>name: &nbsp;</span>Project 6</h2>
+                </li>
+                <li class="text-white">
+                  <span>Description: &nbsp;</span>
+                  <h2 class="border-2 bg-teal-500 rounded-3xl px-4">
+                    Automated data transformation and cleaning for streamlined processing.
+                  </h2>
+                </li>
+              </ul>
+            </div>
+            <img loading="lazy" src="./images/projects/project6.jpg" class="w-full h-full object-cover rounded-xl" />
+          </li>
+         
+          </ul>
+        </div>
+      </section>
+
+      <section class="  py-12 px-4 sm:px-6 lg:px-8 d text-black"  id="contactme">
+        <hr
+          class="dark:bg-gray-500 w-[70%] bg-teal-800 h-1 rounded-full mx-auto mb-5"
+        />
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-extrabold dark:text-white text-gray-900 mb-4">Contact Me</h2>
+          <p class="dark:text-white text-gray-600 mb-8">Feel free to reach out by filling out the form below!</p>
+        </div>
+      
+        <div class="max-w-lg mx-auto  p-8 rounded-lg shadow-2xl shadow-teal-300 drop-shadow-lg border-2  border-teal-300 dark:shadow-teal-400  dark:shadow-lg">
+          <form name="contact" class="" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <!-- Hidden inputs for Netlify form handling -->
+            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="bot-field">
+      
+            <!-- Name Field -->
+            <div class="mb-6 ">
+              <label for="name" class="block text-sm font-medium dark:text-white text-gray-700">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+      
+            <!-- Email Field -->
+            <div class="mb-6">
+              <label for="email" class="block text-sm font-medium dark:text-white text-gray-700">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+      
+            <!-- Message Field -->
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-medium dark:text-white text-gray-700">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+      
+            <!-- Submit Button -->
+            <div>
+              <button
+                type="submit"
+                class="w-full flex dark:text-white justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
     </main>
-    <!-- <div class="w-14 p-20">
-      <canvas class="w-1/2" id="myChart" width="100px" height="100px"></canvas>
-    </div> -->
+    <footer class="dark:bg-teal-400 bg-teal-600 text-white py-6 mt-12 rounded-tl-2xl rounded-tr-2xl">
+      <section class="max-w-4xl mx-auto p-4 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h2 class="text-xl font-medium font-nunito">Imran Khan</h2>
+          <p class="text-sm text-white">Data Analyst | Creating Insights from Data</p>
+          <div class="mt-6">
+            <p class="text-lg"><span><img loading="lazy" src="./images/icons/email.png" class="w-4 inline mr-2" alt="">&nbsp;</span><a class="hover:text-gray-500 " href="mailto: ik1703656@gmail.com
+              "> ik1703656@gmail.com
+            </a></p>
+            <p class="text-lg"><span><img loading="lazy" src="./images/icons/phone.png" class="w-4 inline mr-2" alt="">&nbsp;</span><a class="hover:text-gray-500 " href="tel:+92 314 8147665" target="_blank"> +92 314 8147665`</a></p>
+          </div>
+        </div>
+        <nav class="flex flex-col md:flex-row md:space-x-8">
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 gap-5">
+            <li><a href="#home" class="hover:text-gray-200 hover:underline transition-all">Home</a></li>
+            <li><a href="#aboutme" class="hover:text-gray-200 hover:underline transition-all">About Me</a></li>
+            <li><a href="#projects" class="hover:text-gray-200 hover:underline transition-all">Projects</a></li>
+            <li><a href="#contact" class="hover:text-gray-200 hover:underline transition-all">Contact Me</a></li>
+          </ul>
+        </nav>
+        <div class="flex mt-4 md:mt-0 justify-center">
+          <a href="  https://www.facebook.com/profile.php?id=61557946934104 "   target="_blank" class="mx-2">
+            <img loading="lazy" src="./images/icons/fb.png" alt="Facebook" class="hover:scale-110   w-6 h-6" />
+          </a>
+          <a href="https://www.instagram.com/imran_analyst/ " target="_blank" class="mx-2">
+            <img loading="lazy" src="./images/icons/insta.png" alt="Instagram" class="hover:scale-110   w-6 h-6" />
+          </a>
+          <a href=" https://www.linkedin.com/in/imran-khan-8585i/
+          " target="_blank" class="mx-2">
+            <img loading="lazy" src="./images/icons/linkdin.png" alt="LinkedIn" class="hover:scale-110  w-6 h-6" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="mx-2">
+            <img loading="lazy" src="./images/icons/twitter.png" alt="twitter" class="hover:scale-110   w-6 h-6" />
+          </a>
+          <a href="mailto:imrankhan@me.com" target="_blank" class="mx-2">
+            <img loading="lazy" src="./images/icons/email.png" alt="Email" class="hover:scale-110   w-6" />
+          </a>  
+        </div>
+      </section>
+      <div class="text-center mt-4">
+        <p class="text-sm text-white">&copy; 2024 Imran Khan. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   <script>
-    const ctx = document.getElementById("myChart");
+    const contactinfo = document.getElementById('contactinfo');
+    const close = document.getElementById('close');
+    const contact = document.getElementById('contact');
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
 
-    ctx.addEventListener("mouseover", () => {
-      var ctx = document.getElementById("myChart").getContext("2d");
+    contact.addEventListener(
+      'click',
+      () => {
+        contactinfo.classList.toggle('hidden');
+      }
+    )
 
-      var myChart = new Chart(ctx, {
-        type: "bar", // Chart type
-        data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"], // Labels for each bar
-          datasets: [
-            {
-              label: "Skill Level",
-              data: [0.12, 0.19, 0.03, 0.05, 0.02, 1], // Data values as percentages (e.g., 12% is 0.12)
-              borderWidth: 1,
-              backgroundColor: [
-                "#FF5733", // Color for the first bar
-                "#33FF57", // Color for the second bar
-                "#3357FF", // Color for the third bar
-                "#F3FF33", // Color for the fourth bar
-                "#FF33A1", // Color for the fifth bar
-                "#33FFF6", // Color for the sixth bar
-              ],
-              width: "100px",
-              borderColor: [
-                "#C70039", // Border color for the first bar
-                "#28B463", // Border color for the second bar
-                "#2E86C1", // Border color for the third bar
-                "#F7DC6F", // Border color for the fourth bar
-                "#F39C12", // Border color for the fifth bar
-                "#1ABC9C", // Border color for the sixth bar
-              ],
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true, // Start the y-axis at zero
-              ticks: {
-                // Formatter function for y-axis labels
-                callback: function (value) {
-                  return value * 100 + "%"; // Convert to percentage format
-                },
-              },
-            },
-          },
-        },
+    close.addEventListener('click' , ()=>{
+      contactinfo.classList.add('hidden');
+    })
+
+    contactinfo.addEventListener(
+      'click',
+      () => {
+        contactinfo.classList.add('hidden');
+      }
+    )
+    // Toggle the 'hidden' class when the close button is clicked
+
+  
+    // Toggle the 'hidden' class when the button is clicked
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    menu.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    })
+  
+    // Close menu when clicking a link (for better user experience on small screens)
+    document.querySelectorAll('#menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
       });
     });
-  </script> -->
+    // dark-mode.js
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+darkModeToggle.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+
+  // Save user preference
+  if (document.documentElement.classList.contains('dark')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// Apply saved theme on page load
+if (localStorage.getItem('theme') === 'dark') {
+  document.documentElement.classList.add('dark');
+}
+  
+  </script>
+  
+  <style>
+    @media (min-width: 640px) {
+      #menu {
+        display: flex !important;
+      }
+    }
+  </style>
+
 </html>
